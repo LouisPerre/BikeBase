@@ -1,0 +1,22 @@
+{
+  "name": "bikebase",
+  "version": "1.0.0",
+  "description": "Welcome to BikeBase, your ultimate destination to explore the world of motorcycles. Dive into our comprehensive directory of models, discover detailed profiles and authentic reviews, and join a passionate community of riders. With BikeBase, get ready for an immersive, informative, and inspiring experience dedicated to the timeless passion for two wheels.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LouisPerre/BikeBase.git"
+  },
+  "author": "Louis Perrenot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LouisPerre/BikeBase/issues"
+  },
+  "homepage": "https://github.com/LouisPerre/BikeBase#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
