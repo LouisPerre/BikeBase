@@ -10,22 +10,22 @@ jobs:
     name: Continuous Integration
     runs-on: ubuntu-latest
     steps:
-      - name: "Init repository"
+      - name: Init repository
         uses: actions/checkout@v4
       
-      - name: "Init node"
+      - name: Init node
         uses: actions/setup-node@v3
         with:
           node-version: '19'
 
-      - name: "Install dependencies"
+      - name: Install dependencies
         run: npm install
 
-      - name: "Run tests"
+      - name: Run tests
         run: npm run test
 
-      - name: "Run eslint"
-        run: $(npm bin)/eslint 'src/*.js
+      - name: Run eslint
+        run: $(npm bin)/eslint src/*.js
 
 #      - name: "Publish to NPMJS"
 #        uses: JS-DevTools/npm-publish@v2
