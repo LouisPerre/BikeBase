@@ -28,8 +28,8 @@ jobs:
         run: npx eslint src/*.js
 
 
-#      - name: "Publish to NPMJS"
-#        uses: JS-DevTools/npm-publish@v2
-#        with:
-#          token: ${{ secrets.NPM_TOKEN }}
+      - name: "Publish to NPMJS"
+        uses: JS-DevTools/npm-publish@v2
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
 
