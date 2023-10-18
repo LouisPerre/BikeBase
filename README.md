@@ -1,73 +1,48 @@
+# Bike_Base
 
-# Motorcycle Catalog Functions
+BikeBase is a **JS library** to help work with motorcycles<br>
+![Github](https://img.shields.io/github/v/release/LouisPerre/BikeBase)
+![NPM](https://img.shields.io/npm/v/bikebase.svg)
+![NPM](https://img.shields.io/npm/dm/wealtify.svg)
 
-This repository contains a set of JavaScript functions to manage a motorcycle catalog. Here's an overview of the different functionalities available:
 
+## Installation
 
-## getAllBikes
+We try to keep our library update all the time, so try it out:
 
+### NPM
+```sh
+    npm i bikebase
 ```
-module.exports = {
-  getAllBikes: () => bikes
-};
-
-```
-This function returns the entire catalog of available motorcycles.
-
-
-## getAllBikesA2
-
-```
-module.exports = {
-  getAllBikesA2: () => {
-    const bikesWithA2 = _.mapValues(bikes, (brandBikes) => _.filter(brandBikes, { 'a2': true }));
-    return _.pickBy(bikesWithA2, (brandBikes) => brandBikes.length > 0);
-  }
-};
+### Yarn
+```sh
+    yarn add bikebase
 ```
 
-This function returns an object containing only motorcycles that comply with the A2 standard (for new riders).
+## Import
 
-## getBikesByBrand
-
-```
-module.exports = {
-  getBikesByBrand: (brand) => {
-    const err = "brand must be a string";
-    if (typeof brand !== "string") return { err };
-
-    return bikes[brand];
-  },
-};
+To import and use our library in your project you can use this :
+```javascript
+import * from 'bikebase'
 ```
 
-This function takes a brand name as input and returns an array of motorcycles from that specific brand. It returns an error if the brand name is not a string.
 
-## getBikesByPower
+## Documentation
 
-```
-module.exports = {
-  getBikesByPower: (power_hp, tolerance = 0) => _.chain(bikes)
-    .flatMap(bikes => bikes)
-    .filter(bike => _.inRange(bike.power_hp, power_hp - tolerance, power_hp + tolerance + 1))
-    .value()
-};
-```
+We try to keep our documentation as updated is we can but it might be not perfect.
 
-This function takes horsepower (HP) as input, along with a tolerance (defaulting to 0). It returns an array of motorcycles whose power falls within the specified range (±tolerance).
+[Documentation](./docs/function.md)
 
-## getBikesByYear
 
-```
-module.exports = {
-  getBikesByYear: (year) => _.chain(bikes)
-    .map(bikeList => bikeList)
-    .flatten()
-    .filter(bike => bike.year_launched < year)
-    .value()
-};
-```
+## Contributing
 
-This function takes a year as input and returns an array of motorcycles launched before that specific year.
+Contributions are always welcome!
 
-Feel free to explore these functions and use them as per your requirements!
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
