@@ -1,6 +1,6 @@
 const { getBikesByPower } = require('../src/getBikesByPower')
 
-test('The function sayHello should return a object', () => {
+test('The function getBikesByPower should return a object', () => {
     const result = getBikesByPower(128);
     expect(typeof result).toBe('object')
     expect(result).toEqual({
