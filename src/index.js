@@ -1,11 +1,11 @@
-const { bikes } = require('../data/bikes')
+const { bikes } = require("../data/bikes");
 
 function sayHello() {
-  return 'Hello';
+  return "Hello";
 }
 
 function showBikes() {
-  console.log(bikes.kawasaki)
+  console.log(bikes.kawasaki);
 }
 
 module.exports.sayHello = sayHello;
