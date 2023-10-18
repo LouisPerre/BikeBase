@@ -1,7 +1,10 @@
-const _ = require("lodash");
+const { bikes } = require("../data/bikes");
 
-console.log("coucou");
+err = "brand must be a string";
 
 module.exports = {
-  main: () => {},
+  filterByBrands: (brand) => {
+    if (typeof brand !== "string") return { err };
+    return bikes[brand];
+  },
 };
