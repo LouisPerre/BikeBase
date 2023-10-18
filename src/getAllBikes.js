@@ -1,5 +1,7 @@
-const { bikes } = require('../data/bikes')
+import bikes from "../data/bikes";
 
-module.exports = {
-  getAllBikes: () => bikes
-};
+const getAllBikes = () => {
+  return bikes;
+}
+
+export default getAllBikes;

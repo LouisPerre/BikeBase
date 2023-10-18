@@ -1,4 +1,5 @@
-const { getAllBikesA2 } = require("../src/getAllBikesA2");
+// const { getAllBikesA2 } = require("../src/getAllBikesA2");
+import getAllBikesA2 from "../src/getAllBikesA2";
 
 test('The function getAllBikesA2 should return an object of bikes with A2 == true', () => {
   const result = getAllBikesA2();

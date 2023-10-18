@@ -1,4 +1,5 @@
-const { getBikesByPower } = require('../src/getBikesByPower')
+// const { getBikesByPower } = require('../src/getBikesByPower')
+import getBikesByPower from "../src/getBikesByPower";
 
 test('The function getBikesByPower should return a object', () => {
     const result = getBikesByPower(9999);

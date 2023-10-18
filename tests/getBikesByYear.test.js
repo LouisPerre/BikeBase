@@ -1,4 +1,5 @@
-const { getBikesByYear } = require('../src/getBikesByYear');
+// const { getBikesByYear } = require('../src/getBikesByYear');
+import getBikesByYear from "../src/getBikesByYear";
 
 describe('getBikesByYear function', () => {
   test('returns an array of bikes with launch year less than the specified year', () => {

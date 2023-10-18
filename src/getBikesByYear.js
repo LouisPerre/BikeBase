@@ -1,6 +1,8 @@
 const _ = require('lodash');
-const { bikes } = require('../data/bikes');
+import bikes from "../data/bikes";
 
-module.exports = {
-  getBikesByYear: (year) => _.chain(bikes).map(bikeList => bikeList).flatten().filter(bike => bike.year_launched < year).value()
-};
+const getBikesByYear = (year) => {
+  return _.chain(bikes).map(bikeList => bikeList).flatten().filter(bike => bike.year_launched < year).value()
+}
+
+export default getBikesByYear;

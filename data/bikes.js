@@ -1,5 +1,4 @@
-module.exports = {
-  bikes: {
+const bikes = {
     kawasaki: [
       {
         "model": "Ninja ZX-6R",
@@ -3255,5 +3254,6 @@ module.exports = {
         "a2": true
       }
     ]
-  }
 }
+
+export default bikes;
