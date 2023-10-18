@@ -25,7 +25,8 @@ jobs:
         run: npm run test
 
       - name: Run eslint
-        run: $(npm bin)/eslint src/*.js
+        run: npx eslint src/*.js
+
 
 #      - name: "Publish to NPMJS"
 #        uses: JS-DevTools/npm-publish@v2
