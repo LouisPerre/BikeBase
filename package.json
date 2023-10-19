@@ -1,6 +1,6 @@
 {
   "name": "bikebase",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Welcome to BikeBase, your ultimate destination to explore the world of motorcycles. Dive into our comprehensive directory of models, discover detailed profiles and authentic reviews, and join a passionate community of riders. With BikeBase, get ready for an immersive, informative, and inspiring experience dedicated to the timeless passion for two wheels.",
   "main": "src/index.js",
   "scripts": {
