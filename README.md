@@ -36,6 +36,13 @@ We try to keep our documentation as updated is we can but it might be not perfec
 [Documentation](./docs/function.md)
 
 
+## Issues
+
+If you encounter any issues while using our library or if you have any ideas on how to improve this package go on this link :
+
+[Issues](https://github.com/LouisPerre/BikeBase/issues/new/choose)
+
+
 ## Contributing
 
 Contributions are always welcome!
