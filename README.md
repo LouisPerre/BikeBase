@@ -4,6 +4,8 @@ BikeBase is a **JS library** to help work with motorcycles<br>
 ![Github](https://img.shields.io/github/v/release/LouisPerre/BikeBase)
 ![NPM](https://img.shields.io/npm/v/bikebase.svg)
 ![NPM](https://img.shields.io/npm/dm/wealtify.svg)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=TypeScript&logoColor=FFF&label=Compatible)
+
 
 
 ## Installation

@@ -1,10 +1,12 @@
 {
   "name": "bikebase",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Welcome to BikeBase, your ultimate destination to explore the world of motorcycles. Dive into our comprehensive directory of models, discover detailed profiles and authentic reviews, and join a passionate community of riders. With BikeBase, get ready for an immersive, informative, and inspiring experience dedicated to the timeless passion for two wheels.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prebuild:types": "rimraf ./build",
+    "build:types": "tsc -p ./tsconfig.json --outDir build && api-extractor run"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,9 @@
     "jest": "^29.7.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "@microsoft/api-extractor": "^7.38.0",
+    "lodash": "^4.17.21",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
   }
 }
