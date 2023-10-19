@@ -6,6 +6,8 @@ BikeBase is a **JS library** to help work with motorcycles<br>
 ![NPM](https://img.shields.io/npm/dm/wealtify.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=TypeScript&logoColor=FFF&label=Compatible)
 
+![Logo](https://media.discordapp.net/attachments/850118624618610729/1164571578479169626/Capture_decran_2023-10-19_a_16.png?ex=6543b2cd&is=65313dcd&hm=659adf79bb7289ba462a27724fd413ed58f40f1098b06cb1844b9a727304896f&=&width=1546&height=668)
+
 
 
 ## Installation
